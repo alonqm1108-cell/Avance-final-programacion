@@ -23,3 +23,18 @@ ACTIVIDADES = (
 ("Realizar observacion", 0 , 5, 0, 8),
 ("sobrevolaar la zona", 15, 3, 0, 25)
 )
+
+
+
+
+RECURSOS = ("combustible", "oxigeno", "energia","provisiones")
+RECURSO_VITALES = ("oxigeno","energia","provisiones")
+RESULTADOS = ("El regreso fue un exito", "El regreso fue interrumpido","La tripulacion esta varada","No hay autorizacion","No se planifico el viaje")
+
+
+
+#Posicion de los recursos
+COMBUSTIBLE = 0
+OXIGENO = 1 
+ENERGIA = 2
+PROVISIONES = 3
