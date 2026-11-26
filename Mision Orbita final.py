@@ -73,3 +73,10 @@ def seleccionar_destino():
 
 
     #Programa principal
+    if __name__ == "__main__":
+
+        recursos_actuales = leer_recursos()
+        print(f"Recursos iniciales: {recursos_actuales}")
+
+    destino_actual = sleccionar_destino()
+    print(f"Destino seleccionado: {destino_actual[0]} con factor de distancia: {destino_actual[1]}")
