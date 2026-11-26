@@ -38,3 +38,38 @@ COMBUSTIBLE = 0
 OXIGENO = 1 
 ENERGIA = 2
 PROVISIONES = 3
+
+
+
+
+
+
+
+
+#Funciones 
+def leer_recursos():
+    print("\n--- INGRESO DE RECURSOS ---")
+    valores_ingresados = []
+
+    for nombre in RECURSOS:
+        cantidad = int(input(f"Igrese la cantidad de {nombre} disponible: "))
+        valores_ingresados.append(cantidad)
+
+        return valores_ingresados
+
+def seleccionar_destino():
+    print("\n--- SELECCION DE DESTINO ---")
+
+    for i in range(len(DESTINOS)):
+        nombre_planeta = DESTINOS[i][0]
+        print(f"{i + 1}. {nombre_planeta}")
+
+    opcion = int(input("Ingrese el numero del destino:"))
+    destino_elegido = DESTINOS[opcion - 1]
+
+    return destino_elegido
+
+
+
+
+    #Programa principal
